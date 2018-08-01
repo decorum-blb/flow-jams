@@ -1,44 +1,59 @@
-To keep things organized, let's create a folder for this workshop. 
+_This workshopper assumes that you have NodeJS installed on your machine with a working version of NPM, and that you have a working knowledge of JavaScript._
 
-Run this command to make a directory called `javascripting` (or something else if you like):
+Before we get started, let's start by creating a new directory to work in.
 
-```bash
-mkdir javascripting
-```
-
-Change directory into the `javascripting` folder:
+Run this command to make a directory called `go-with-the-flow` (or something else if you like):
 
 ```bash
-cd javascripting
+mkdir go-with-the-flow
 ```
 
-Create a file named `introduction.js`:
+Change directory into the `go-with-the-flow` folder:
 
 ```bash
-touch introduction.js
+cd go-with-the-flow
 ```
 
-Or if you're on Windows: 
+Now, let's initialize our folder for NPM:
+
 ```bash
-type NUL > introduction.js
+npm init -y
 ```
-(`type` is part of the command!)
 
-Open the file in your favorite editor, and add this text:
+Next, let's seed this directory with all of the dependencies we're going to need for this workshopper:
 
+```bash
+npm install --save-dev babel-cli babel-preset-flow
+```
+
+This is going to install [Babel](https://babeljs.io/docs/en/index.html) and the Babel preset for FlowJS.
+
+Babel is a tool that converts ECMAScript 2015+ and experimental JavaScript code into something that will work on all browsers, even the older ones.
+
+So we're going to need a Babel configuration file :
+
+```bash
+touch .babelrc
+echo '{ "presets": ["flow"] }' >> .babelrc
+```
+
+Lastly we're going to create a directory to put all of our code in, and add a script to our `package.json` to make everything a little easier to work with later.
+
+```bash
+mkdir src
+```
+
+Add the following to the `package.json`
 ```js
-console.log('hello');
+{
+"scripts": {
+    "build": "babel src/ -d lib/"
+  }
+}
 ```
 
-Save the file, then check to see if your program is correct by running this command:
+Okay - that was a lot! So let's make sure that your workspace/directory is all set by running this command:
 
 ```bash
-javascripting verify introduction.js
+go-with-the-flow verify package.json
 ```
-
-By the way, throughout this tutorial, you can give the file you work with any name you like, so if you want to use something like `catsAreAwesome.js` file for every exercise, you can do that. Just make sure to run:
-
-```bash
-javascripting verify catsAreAwesome.js
-```
-
