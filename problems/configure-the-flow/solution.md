@@ -8,38 +8,52 @@ Right now, your project structure should look like this:
 ├── node_modules/
 ├── src/
 ├── .babelrc
+├── .flowconfig
 ├── package-lock.json
 ├── package.json      
 ```
 
-Your `.babelrc` should look like this:
-```js
-{ "presets": ["flow"] }
+Your `.flowconfig` should look like this:
+```yaml
+[ignore]
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+
+[strict]
+
 ```
 
 And your `package.json` should look something like this:
-```js
+```json
 {
-  "name": "go-with-the-flow",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "babel src/ -d lib/",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-flow": "^6.23.0"
-  }
+    "name": "go-with-the-flow",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "babel src/ -d lib/",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "flow": "flow"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-flow": "^6.23.0",
+        "flow-bin": "^0.77.0"
+    }
 }
 ```
 
-We have a little futher to go before we start exploring FlowJS itself, but wear with me, you're almost there!
+Now we're finally ready to start playing with Flow!
 
-In the next challenge we're going to configure FlowJS for our project.
+In the next challenge we're going to about Type Systems and what it is that Flow does for us as developers.
 
 Run `go-with-the-flow` in the console to choose the next challenge.

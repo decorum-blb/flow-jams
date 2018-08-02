@@ -1,58 +1,54 @@
-_This workshopper assumes that you have NodeJS installed on your machine with a working version of NPM, and that you have a working knowledge of JavaScript._
+Now that we have the Babel preset for Flow installed and we have Babel configured to use Flow, we need to install the Flow library itself!
 
-Before we get started, let's start by creating a new directory to work in.
-
-Run this command to make a directory called `go-with-the-flow` (or something else if you like):
+Install Flow as a dev dependency with NPM by running this command:
 
 ```bash
-mkdir go-with-the-flow
+npm install --save-dev flow-bin
 ```
 
-Change directory into the `go-with-the-flow` folder:
+This will install the Flow library to our project and add it to our `package.json`.
 
-```bash
-cd go-with-the-flow
-```
+Let's add a little script to our `package.json` to make calling Flow a little easier.
 
-Now, let's initialize our folder for NPM:
+Add the following to the `"scripts"` section of your `package.json` file:
 
-```bash
-npm init -y
-```
-
-Next, let's seed this directory with all of the dependencies we're going to need for this workshopper:
-
-```bash
-npm install --save-dev babel-cli babel-preset-flow
-```
-
-This is going to install [Babel](https://babeljs.io/docs/en/index.html) and the Babel preset for FlowJS.
-
-Babel is a tool that converts ECMAScript 2015+ and experimental JavaScript code into something that will work on all browsers, even the older ones.
-
-So we're going to need a Babel configuration file :
-
-```bash
-touch .babelrc
-echo '{ "presets": ["flow"] }' >> .babelrc
-```
-
-Lastly we're going to create a directory to put all of our code in, and add a script to our `package.json` to make everything a little easier to work with later.
-
-```bash
-mkdir src
-```
-
-Add the following to the `package.json`
-```js
+```json
 {
-"scripts": {
-    "build": "babel src/ -d lib/"
+  "scripts": {
+    "flow": "flow"
   }
 }
 ```
 
-Okay - that was a lot! So let's make sure that your workspace/directory is all set by running this command:
+With Flow installed and easily accessible, let's initialize our project so that we can write code that uses Flow!
+
+Run the following command:
+
+```bash
+npm run flow init
+```
+
+This will create a `.flowconfig` file in your directory with some configuration properties that we'll get into later.
+
+Before we get to that though, let's make sure we can start Flow!
+
+```bash
+npm run flow
+```
+
+You should see something like this:
+
+```bash
+> flow
+
+#<some garble-de-gook about log files>
+
+No errors!
+```
+
+Finally! We're ready to start playing with Flow!
+
+Let's make sure that your workspace/directory is all set by running this command:
 
 ```bash
 go-with-the-flow verify package.json
