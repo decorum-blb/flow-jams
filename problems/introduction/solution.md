@@ -13,12 +13,12 @@ Right now, your project structure should look like this:
 ```
 
 Your `.babelrc` should look like this:
-```js
+```json
 { "presets": ["flow"] }
 ```
 
 And your `package.json` should look something like this:
-```js
+```json
 {
   "name": "go-with-the-flow",
   "version": "1.0.0",
@@ -38,8 +38,8 @@ And your `package.json` should look something like this:
 }
 ```
 
-We have a little futher to go before we start exploring FlowJS itself, but wear with me, you're almost there!
+We have a little further to go before we start exploring Flow itself, but wear with me, you're almost there!
 
-In the next challenge we're going to configure FlowJS for our project.
+In the next challenge we're going to configure Flow for our project.
 
 Run `go-with-the-flow` in the console to choose the next challenge.
