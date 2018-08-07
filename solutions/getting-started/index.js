@@ -1,8 +1,7 @@
-// @flow
 const first = process.argv[2];
 const second = process.argv[3];
 
-function addNumbers(x: number, y: number): number {
+function addNumbers(x, y) {
     return x + y;
 }
 
