@@ -31,6 +31,6 @@ Congratulations!
 
 You've learned about Literal types in Flow.
 
-In the next challenge we're going to learn mixing types in Flow.
+In the next challenge we're going to learn about Variables in Flow.
 
 Run `go-with-the-flow` in the console to choose the next challenge.
