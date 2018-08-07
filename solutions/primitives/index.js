@@ -1,16 +1,11 @@
-// @flow
 const stringParam = process.argv[2];
 
-function convertStringToNumber(param: string): number {
+function convertStringToNumber(param) {
     return parseInt(param, 10);
 }
 
-function isParam42(param: number): boolean {
-    return (param === 42);
+function isParam42(param) {
+    return param === 42;
 }
 
-console.log(
-    isParam42(
-        convertStringToNumber(stringParam)
-    )
-);
+console.log(isParam42(convertStringToNumber(stringParam)));
