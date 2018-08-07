@@ -4,7 +4,7 @@
 
 For reference, here is the solution we came up with:
 `src/calculator.js`
-```json
+```js
 // @flow
 const first = process.argv[2];
 const second = process.argv[3];
