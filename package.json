@@ -1,7 +1,7 @@
 {
     "name": "go-with-the-flow",
-    "description": "Learn Flow JS by adventuring around in the terminal.",
-    "version": "0.0.1",
+    "description": "Learn Facebook's Flow type-system library by adventuring around in the terminal.",
+    "version": "0.1.0",
     "repository": {
         "url": "https://github.com/thatadamedwards/go-with-the-flow"
     },
