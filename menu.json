@@ -6,5 +6,6 @@
     "LITERALS",
     "VARIABLES",
     "OBJECTS",
-    "FUNCTIONS"
+    "FUNCTIONS",
+    "CLASSES"
 ]
