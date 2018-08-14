@@ -8,5 +8,6 @@
     "OBJECTS",
     "FUNCTIONS",
     "CLASSES",
-    "INTERFACES"
+    "INTERFACES",
+    "TYPE ALIASES"
 ]
