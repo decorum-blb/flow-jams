@@ -10,5 +10,6 @@
     "CLASSES",
     "INTERFACES",
     "TYPE ALIASES",
+    "TYPE CASTING",
     "GENERICS"
 ]
