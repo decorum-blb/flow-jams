@@ -26,4 +26,4 @@ You've learned about Functions in Flow.
 
 In the next challenge we're going to learn about Classes in Flow.
 
-Run `go-with-the-flow` in the console to choose the next challenge.
+Run `flow-jams` in the console to choose the next challenge.

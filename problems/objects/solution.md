@@ -27,4 +27,4 @@ You've learned about Object types in Flow.
 
 In the next challenge we're going to learn about Function Types in Flow.
 
-Run `go-with-the-flow` in the console to choose the next challenge.
+Run `flow-jams` in the console to choose the next challenge.

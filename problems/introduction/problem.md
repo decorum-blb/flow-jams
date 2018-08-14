@@ -2,16 +2,16 @@ _This workshopper assumes that you have NodeJS installed on your machine with a 
 
 Before we get started, let's start by creating a new directory to work in.
 
-Run this command to make a directory called `go-with-the-flow` (or something else if you like):
+Run this command to make a directory called `flow-jams` (or something else if you like):
 
 ```bash
-mkdir go-with-the-flow
+mkdir flow-jams
 ```
 
-Change directory into the `go-with-the-flow` directory:
+Change directory into the `flow-jams` directory:
 
 ```bash
-cd go-with-the-flow
+cd flow-jams
 ```
 
 Let's start by initializing our directory for NPM:
@@ -65,5 +65,5 @@ Okay - that was a lot!
 Let's make sure that your workspace/directory is all set by running this command:
 
 ```bash
-go-with-the-flow verify package.json
+flow-jams verify package.json
 ```

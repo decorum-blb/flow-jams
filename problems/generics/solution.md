@@ -26,4 +26,4 @@ You've learned how to [Go With The Flow!](https://media3.giphy.com/media/1iLVlbh
 
 Go forth and build awesome stuff!
 
-Run `go-with-the-flow` in the console to choose the next challenge.
+Run `flow-jams` in the console to choose the next challenge.

@@ -88,5 +88,5 @@ This will create a copy of a universally valid version of `calculator.js` in a `
 To see if your code works, test your solution by running:
 
 ```bash
-go-with-the-flow verify lib/calculator.js
+flow-jams verify lib/calculator.js
 ```

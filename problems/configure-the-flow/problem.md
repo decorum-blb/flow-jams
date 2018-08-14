@@ -51,5 +51,5 @@ Finally! We're ready to start playing with Flow!
 Let's make sure that your workspace/directory is all set by running this command:
 
 ```bash
-go-with-the-flow verify package.json
+flow-jams verify package.json
 ```

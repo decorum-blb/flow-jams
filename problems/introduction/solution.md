@@ -20,7 +20,7 @@ Your `.babelrc` should look like this:
 And your `package.json` should look something like this:
 ```json
 {
-  "name": "go-with-the-flow",
+  "name": "flow-jams",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -42,4 +42,4 @@ We have a little further to go before we start exploring Flow itself, but wear w
 
 In the next challenge we're going to configure Flow for our project.
 
-Run `go-with-the-flow` in the console to choose the next challenge.
+Run `flow-jams` in the console to choose the next challenge.

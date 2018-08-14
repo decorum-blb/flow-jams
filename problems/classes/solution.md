@@ -24,4 +24,4 @@ You've learned about Classes in Flow.
 
 In the next challenge we're going to learn about Interfaces in Flow.
 
-Run `go-with-the-flow` in the console to choose the next challenge.
+Run `flow-jams` in the console to choose the next challenge.
