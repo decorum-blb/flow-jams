@@ -9,5 +9,6 @@
     "FUNCTIONS",
     "CLASSES",
     "INTERFACES",
-    "TYPE ALIASES"
+    "TYPE ALIASES",
+    "GENERICS"
 ]
