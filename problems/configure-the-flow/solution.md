@@ -32,7 +32,7 @@ Your `.flowconfig` should look like this:
 And your `package.json` should look something like this:
 ```json
 {
-    "name": "go-with-the-flow",
+    "name": "flow-jams",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -56,4 +56,4 @@ Now we're finally ready to start playing with Flow!
 
 In the next challenge we're going to about Type Systems and what it is that Flow does for us as developers.
 
-Run `go-with-the-flow` in the console to choose the next challenge.
+Run `flow-jams` in the console to choose the next challenge.

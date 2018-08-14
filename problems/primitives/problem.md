@@ -65,5 +65,5 @@ npm run build
 To see if your code works, test your solution by running:
 
 ```bash
-go-with-the-flow verify lib/primitives.js
+flow-jams verify lib/primitives.js
 ```

@@ -29,4 +29,4 @@ You've gotten your first taste for Type Systems, and how Flow helps us to test o
 
 In the next challenge we're going to learn some of the Primitive Types that are provided by JavaScript.
 
-Run `go-with-the-flow` in the console to choose the next challenge.
+Run `flow-jams` in the console to choose the next challenge.
