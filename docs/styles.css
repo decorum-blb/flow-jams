@@ -167,6 +167,7 @@ a:hover {
   padding: clamp(5rem, 14vh, 8rem) var(--pad) clamp(2.5rem, 6vh, 4rem);
   max-width: 42rem;
   color: var(--paper);
+  text-shadow: 0 1px 24px rgba(0, 0, 0, 0.45);
 }
 
 .brand {
@@ -176,9 +177,7 @@ a:hover {
   font-size: clamp(2.8rem, 10vw, 6.5rem);
   line-height: 0.9;
   letter-spacing: 0.04em;
-  opacity: 0;
-  transform: translateY(1.2rem);
-  animation: rise 1s var(--ease) 0.15s forwards;
+  animation: rise 0.9s var(--ease) both;
 }
 
 .hero h1 {
@@ -188,27 +187,21 @@ a:hover {
   font-size: clamp(1.35rem, 3.2vw, 2rem);
   line-height: 1.2;
   max-width: 18ch;
-  opacity: 0;
-  transform: translateY(1rem);
-  animation: rise 1s var(--ease) 0.35s forwards;
+  animation: rise 0.9s var(--ease) 0.08s both;
 }
 
 .lede {
   margin: 0 0 1.75rem;
   max-width: 32ch;
   color: var(--mist);
-  opacity: 0;
-  transform: translateY(1rem);
-  animation: rise 1s var(--ease) 0.5s forwards;
+  animation: rise 0.9s var(--ease) 0.14s both;
 }
 
 .cta-row {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem 1rem;
-  opacity: 0;
-  transform: translateY(1rem);
-  animation: rise 1s var(--ease) 0.65s forwards;
+  animation: rise 0.9s var(--ease) 0.2s both;
 }
 
 .btn {
@@ -492,6 +485,10 @@ a:hover {
 }
 
 @keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(0.85rem);
+  }
   to {
     opacity: 1;
     transform: none;
@@ -548,10 +545,10 @@ a:hover {
   .lede,
   .cta-row,
   .reveal {
-    opacity: 1;
-    transform: none;
-    animation: none;
-    transition: none;
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
   }
 
   .paint-a,
