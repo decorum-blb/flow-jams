@@ -19,7 +19,11 @@ One-time setup in the GitHub repo:
 1. **Settings → Pages**
 2. Source: **GitHub Actions**
 
-After merge, the site will be at `https://<owner>.github.io/<repo>/`.
+After merge, the **project** site will be at:
+
+`https://decorum-blb.github.io/flow-jams/`
+
+Note: `https://decorum-blb.github.io/` is the org/user Pages root and will 404 unless a separate `decorum-blb.github.io` repo exists. This site is served under `/flow-jams/`.
 
 ## Content source
 
