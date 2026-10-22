@@ -1,79 +1,29 @@
-# FLOW-JAMS
+# BASEDMENT Studio
 
-> Learn Flow JS by adventuring around in the terminal.  
+Minimal marketing site for [@basedmentstudio](https://www.instagram.com/basedmentstudio/) — daily paintings from Ann Arbor, MI. Originals and prints via Instagram DM.
 
-> _Looking for more interactive tutorials like this? Go to [nodeschool.io](http://nodeschool.io)._
+## Local preview
 
-## Get help
-Having issues with flow-jams? Get help troubleshooting in the [nodeschool discussions repo](http://github.com/nodeschool/discussions), or on gitter:
-
-
-TODO - update Gitter reference
-[![Gitter](https://img.shields.io/gitter/room/gitterHQ/gitter.svg)](https://gitter.im/nodeschool/discussions?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-## Install Node.js
-
-Make sure Node.js is installed on your computer.
-
-Install it from [nodejs.org](https://nodejs.org/)
-
-On Windows and using v4 or v5 of Node.js? Make sure you are using at least 5.1.0, which provides a fix for a bug on Windows where you can't choose items in the menu.
-
-### Install `flow-jams` with `npm`
-
-Open your terminal and run this command:
-
-```
-npm install --global flow-jams
+```bash
+npx --yes serve docs
 ```
 
-The `--global` option installs this module globally so that you can run it as a command in your terminal.
+Open the printed local URL.
 
-#### Having issues with installation?
+## Deploy (GitHub Pages)
 
-If you get an `EACCESS` error, the simplest way to fix this is to rerun the command, prefixed with sudo:
+This repo deploys the `docs/` folder with GitHub Actions (`.github/workflows/pages.yml`) on every push to `master`.
 
-```
-sudo npm install --global flow-jams
-```
+One-time setup in the GitHub repo:
 
-You can also fix the permissions so that you don't have to use `sudo`. Take a look at this npm documentation:
-https://docs.npmjs.com/getting-started/fixing-npm-permissions
+1. **Settings → Pages**
+2. Source: **GitHub Actions**
 
-## Run the workshop
+After merge, the site will be at `https://<owner>.github.io/<repo>/`.
 
-Open your terminal and run the following command:
+## Content source
 
-```
-flow-jams
-```
+Copy and study titles are drawn from the public Instagram profile:
 
-You'll see the menu:
-
-TODO - make sure to update the screenshot
-
-![flow-jams screenshot](screenshot.png)
-
-Navigate the menu with the up & down arrow keys. 
-
-Choose a challenge by hitting enter.
-
-You can use any editor you like. 
-
-TODO Add VS Code 
-
-[atom](http://atom.io) or [brackets](http://brackets.io/) are both good options.
-
-## Need help with an exercise?
-
-Open an issue in the nodeschool/discussions repo: https://github.com/nodeschool/discussions
-
-Include the name `flow-jams` and the name of the challenge you're working on in the title of the issue.
-
-## Get Involved
-
-Code contributions welcome! Please check our [documentation on contributing](https://github.com/thatadamedwards/flow-jams/blob/master/CONTRIBUTING.md) to get started.
-
-## License
-
-MIT
+- Bio: daily paintings · DM for originals & prints · Ann Arbor, MI
+- Studies: blue/yellow light, purple light, gloomy-day acrylics, pastel colors, cosmic gaze, foreground light (oil pastel)
